@@ -25,9 +25,7 @@ mdc: true
 #  ogImage: https://cover.sli.dev
 ---
 
-# Cursor 使用指南
-
-提升开发效率的AI编程助手完整指南
+# Cursor Vibe coding
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover:bg="white hover:bg-opacity-10">
@@ -66,9 +64,7 @@ layout: section
 
 ---
 
-# Cursor 基础配置
-
-## 🎯 核心配置项
+## Cursor 基础配置
 
 ### Features
 Include project structure
@@ -92,10 +88,7 @@ layout: section
 
 ---
 
-# 代码索引机制
-
-## 🔍 索引工作原理
-
+## 代码索引机制
 <div class="grid grid-cols-2 gap-8">
 
 <div>
@@ -146,10 +139,7 @@ layout: section
 
 ---
 
-# 索引优化策略
-
-## ⚡ 提升索引效率
-
+## 索引优化策略
 <div class="grid grid-cols-2 gap-6">
 
 <div>
@@ -207,10 +197,7 @@ layout: section
 
 ---
 
-# .cursorrules 文件
-
-## 📋 规则配置基础
-
+## .cursorrules 文件
 <div class="grid grid-cols-2 gap-6">
 
 <div>
@@ -265,10 +252,7 @@ layout: section
 
 ---
 
-# 规则最佳实践
-
-## 🎯 有效规则编写
-
+## 规则最佳实践
 <div class="grid grid-cols-2 gap-6">
 
 <div>
@@ -315,8 +299,6 @@ layout: section
 
 ---
 
-# 团队协作规则
-
 ## 👥 多人开发规范
 
 ```markdown
@@ -349,8 +331,6 @@ layout: section
 与AI高效沟通的艺术
 
 ---
-
-# 提示工程基础
 
 ## 💬 有效提示的构成
 
@@ -403,8 +383,6 @@ layout: section
 </div>
 
 ---
-
-# 高级提示技巧
 
 ## 🚀 提升AI理解能力
 
@@ -468,8 +446,6 @@ layout: section
 
 ---
 
-# 提示模板库
-
 ## 📚 常用提示模板
 
 <div class="grid grid-cols-2 gap-6">
@@ -527,10 +503,7 @@ layout: section
 
 ---
 
-# MCP 简介
-
-## 🔌 模型上下文协议
-
+## MCP 简介
 <div class="grid grid-cols-2 gap-6">
 
 <div>
@@ -571,8 +544,6 @@ graph TD
 </div>
 
 ---
-
-# MCP 服务器配置
 
 ## ⚙️ 配置 MCP 服务器
 
@@ -646,8 +617,6 @@ server.setRequestHandler(
 
 ---
 
-# MCP 实际应用
-
 ## 🛠️ 常用 MCP 工具
 
 <div class="grid grid-cols-2 gap-6">
@@ -704,8 +673,6 @@ await callTool('git_branch', {
 </div>
 
 ---
-
-# 自定义 MCP 工具
 
 ## 🔧 开发专用工具
 
@@ -771,10 +738,7 @@ const depAnalysis = {
 
 ---
 
-# AI如何确定应使用的MCP Server？
-
-## Use System Prompt
-
+## AI如何确定应使用的MCP Server？
 - AI通过Prompt指令，结合MCP Server的工具描述，分析需求并选择合适的工具。
 - MCP协议提供标准化通信框架，包括工具发现、描述规范、调用协议和结果传递。
 - 客户端负责与MCP Server建立连接，发现可用工具，并将工具描述传递给大模型。
@@ -789,26 +753,26 @@ layout: section
 
 ---
 
-# 精确定位上下文
+## 精确定位上下文
 - @file
 - @folder
 - @git
 
 ---
 
-# Chat history
+## Chat history
 - 回忆过去 @Past Chats
 - 全新开始 New chat
 
 ---
 
-# Cursor Docs
+## Cursor Docs
 - 使用cursor索引官方文档
 - Context7 MCP
 
 --- 
 
-# 设计文档和检查清单
+## 设计文档和检查清单
 
 <div class="grid grid-cols-2 gap-6">
 
@@ -838,7 +802,7 @@ layout: section
 
 --- 
 
-# 推荐的编程模型
+## 推荐的编程模型
 - Claude 4.0 opus/sonnet 最新最强的编程模型
 - Gemini 2.5：高级软件工程师 需要推动
 - Claude 3.7：过度思考者，热衷于使用工具，需要驯服；适合做规划
@@ -855,7 +819,7 @@ layout: section
 
 ---
 
-# 需求分解 (Requirement Decomposition)
+## 需求分解 (Requirement Decomposition)
 - **目标**: 将宏大、模糊的需求细化为具体、可管理、可测试的小任务。
 - **方法**:
     - 用户故事映射 (User Story Mapping)
@@ -868,7 +832,7 @@ layout: section
 
 ---
 
-# 功能模块化 (Functional Modularization)
+## 功能模块化 (Functional Modularization)
 - **目标**: 将系统按照功能逻辑划分为独立的、高内聚、低耦合的模块。
 - **原则**:
     - 单一职责原则 (SRP)
@@ -880,7 +844,7 @@ layout: section
 
 ---
 
-# 组件化 (Componentization)
+## 组件化 (Componentization)
 - **目标**: 将UI和业务逻辑封装为可复用的、独立的组件单元。
 - **特征**:
     - 封装性 (Encapsulation)
@@ -893,7 +857,7 @@ layout: section
 
 ---
 
-# 职责分离 (Separation of Responsibilities)
+## 职责分离 (Separation of Responsibilities)
 - **目标**: 确保每个模块或组件只关注自身的核心职责，避免功能臃肿。
 - **实践**:
     - MVC/MVP/MVVM 架构模式
@@ -912,7 +876,7 @@ layout: section
 
 ---
 
-# 善用 Git
+## 善用 Git
 虽然Cursor自带了restore checkpoint的功能，但是依然推荐小步迭代的方式提交commit,方便回滚。
 
 ---
@@ -923,7 +887,7 @@ layout: section
 
 ---
 
-# 主导架构设计与功能分解
+## 主导架构设计与功能分解
 - **AI 是副驾，您是机长**: AI 可以提供建议、生成代码片段，但最终的架构决策和任务分解需要您来把控。
 - **设定清晰的蓝图**: 您需要定义项目的整体结构、模块划分、接口设计。
 - **分解复杂任务**: 将大问题拆解成 AI 更容易理解和处理的小块。
@@ -931,7 +895,7 @@ layout: section
 
 ---
 
-# 仔细审查 AI 生成的代码
+## 仔细审查 AI 生成的代码
 - **AI 不会完美**: 生成的代码可能存在 bug、安全漏洞、性能问题或不符合项目规范。
 - **您的责任**: 作为开发者，您对最终代码质量负全责。
 - **审查要点**:
@@ -943,7 +907,7 @@ layout: section
 
 ---
 
-# 遵循"探索 -> 设计 -> 编码 -> 审查"流程
+## 遵循"探索 -> 设计 -> 编码 -> 审查"流程
 - **与 AI 一起探索 (Explore with AI)**: 利用 AI 快速调研技术方案、API 用法、代码示例。
 - **自主设计 (Design by Yourself)**: 结合 AI 的输入，进行独立的思考和设计决策。
 - **AI 辅助编码 (Code with AI)**: 让 AI 生成重复性或模板化的代码，或协助完成具体功能点。
@@ -952,7 +916,7 @@ layout: section
 
 ---
 
-# 重视测试：验证与保障
+## 重视测试：验证与保障
 - **单元测试**: 针对 AI 生成的每个函数或模块编写测试用例。
 - **集成测试**: 验证不同模块组合在一起时能否正常工作。
 - **端到端测试**: 模拟用户真实场景进行测试。
