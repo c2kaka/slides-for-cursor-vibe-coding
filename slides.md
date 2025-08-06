@@ -88,57 +88,6 @@ layout: section
 
 ---
 
-## 代码索引机制
-<div class="grid grid-cols-2 gap-8">
-
-<div>
-
-### 索引类型
-- **语法索引**: 解析代码结构
-- **语义索引**: 理解代码含义
-- **依赖索引**: 追踪模块关系
-- **文档索引**: 注释和文档
-
-### 索引范围
-```
-项目根目录/
-├── src/           ✅ 索引
-├── tests/         ✅ 索引
-├── docs/          ✅ 索引
-├── node_modules/  ❌ 排除
-└── .git/          ❌ 排除
-```
-
-</div>
-
-<div>
-
-### 索引配置
-```json
-{
-  "cursor.indexing": {
-    "enabled": true,
-    "includePatterns": [
-      "**/*.{js,ts,jsx,tsx}",
-      "**/*.{py,java,cpp,c}",
-      "**/*.{md,txt,json}"
-    ],
-    "excludePatterns": [
-      "**/node_modules/**",
-      "**/dist/**",
-      "**/.git/**",
-      "**/coverage/**"
-    ]
-  }
-}
-```
-
-</div>
-
-</div>
-
----
-
 ## 索引优化策略
 <div class="grid grid-cols-2 gap-6">
 
@@ -772,6 +721,22 @@ layout: section
 
 --- 
 
+## Notepad
+Notepads are context-sharing tools in Cursor that bridge composers and chat interactions. They extend .cursorrules capabilities, creating reusable contexts for your development workflow.
+
+
+### Key features
+Context Sharing: 
+- Share context between composers and chat
+File Attachments: 
+- Attach documentation and reference files (not available in .cursorrules)
+Dynamic References: 
+- Use @ mentions to link resources
+Flexible Content: 
+- Write and structure information as needed
+
+---
+
 ## 设计文档和检查清单
 
 <div class="grid grid-cols-2 gap-6">
@@ -803,11 +768,19 @@ layout: section
 --- 
 
 ## 推荐的编程模型
+### 国外模型
 - Claude 4.0 opus/sonnet 最新最强的编程模型
 - Gemini 2.5：高级软件工程师 需要推动
 - Claude 3.7：过度思考者，热衷于使用工具，需要驯服；适合做规划
 ‍- Claude 3.5：全能高手，依然如此
 - GPT-4.1 / o3：开始意识到编程不仅仅是关于基准测试
+- Grok 4
+
+### 国产模型
+- Kimi K2
+- GLM-4.5
+- DeepSeek R1 0528
+- Qwen3 235B 2507 (Reasoning)
 
 
 ---
@@ -888,16 +861,16 @@ layout: section
 ---
 
 ## 主导架构设计与功能分解
-- **AI 是副驾，您是机长**: AI 可以提供建议、生成代码片段，但最终的架构决策和任务分解需要您来把控。
-- **设定清晰的蓝图**: 您需要定义项目的整体结构、模块划分、接口设计。
+- **AI 是副驾，程序员才是机长**: AI 可以提供建议、生成代码片段，但最终的架构决策和任务分解需要程序员来把控。
+- **设定清晰的蓝图**: 需要定义项目的整体结构、模块划分、接口设计。
 - **分解复杂任务**: 将大问题拆解成 AI 更容易理解和处理的小块。
-- **保持大局观**: AI 可能陷入局部细节，您需要从全局视角审视设计。
+- **保持大局观**: AI 可能陷入局部细节，需要从全局视角审视设计。
 
 ---
 
 ## 仔细审查 AI 生成的代码
 - **AI 不会完美**: 生成的代码可能存在 bug、安全漏洞、性能问题或不符合项目规范。
-- **您的责任**: 作为开发者，您对最终代码质量负全责。
+- **AI不会接锅**: 作为开发者，程序员对最终代码质量负全责。
 - **审查要点**:
     - **正确性**: 是否符合需求？逻辑是否严谨？
     - **安全性**: 是否有潜在风险？
@@ -929,42 +902,10 @@ layout: section
 layout: section
 ---
 
-# 未来发展趋势
+# 总结
 
-## 🔮 AI 编程的未来
+---
 
-<div class="grid grid-cols-2 gap-6">
-
-<div>
-
-### 技术演进
-- **多模态AI**: 理解图像、音频、视频
-- **代码理解**: 更深层的语义分析
-- **自动化测试**: AI 生成完整测试套件
-- **智能重构**: 大规模代码库重构
-
-### 工作流集成
-- **CI/CD 集成**: 自动化部署流程
-- **代码审查**: AI 辅助 Code Review
-- **文档生成**: 自动生成技术文档
-- **性能优化**: 智能性能分析
-
-</div>
-
-<div>
-
-### 团队协作
-- **知识共享**: AI 驱动的知识库
-- **技能传承**: 自动化培训系统
-- **项目管理**: 智能任务分配
-- **质量保证**: 全自动质量检测
-
-### 生态发展
-- **插件生态**: 丰富的扩展插件
-- **社区贡献**: 开源工具和模板
-- **标准化**: 行业标准和规范
-- **教育培训**: 专业认证体系
-
-</div>
-
-</div>
+- 你的能力越强，AI对你的帮助越大
+- 通过AI来加速你的学习
+- AI有一天可能会替代你的工作岗位，能做的就是适应这个变化，相信人的成长性和可塑性
